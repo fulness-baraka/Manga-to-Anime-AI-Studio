@@ -1,18 +1,18 @@
 :root {
   --ig-font-family: "Roboto";
-  --ig-size: var(--ig-size-medium);
   --ig-radius-factor: 0.5;
-  --ig-primary-500: #2196F3;
-  --ig-secondary-500: #9C27B0;
+  --ig-primary-500: #00FFFF;
+  --ig-secondary-500: #FF00FF;
   --ig-surface-500: #121212;
-  --ig-error-500: #CF6679;
-  --ig-success-500: #66BB6A;
-  --ig-warn-500: #FFCA28;
-  --ig-info-500: #03A9F4;
-  --ig-secondary-300-contrast: white;
-  --ig-secondary-400-contrast: white;
-  --ig-secondary-500-contrast: white;
-  --ig-secondary-A200-contrast: white;
+  --ig-error-500: #FF4136;
+  --ig-success-500: #2ECC40;
+  --ig-warn-500: #FFDC00;
+  --ig-info-500: #0074D9;
+  --ig-primary-800-contrast: black;
+  --ig-primary-900-contrast: black;
+  --ig-primary-A700-contrast: black;
+  --ig-secondary-600-contrast: black;
+  --ig-secondary-A400-contrast: black;
   --ig-surface-50-contrast: white;
   --ig-surface-100-contrast: white;
   --ig-surface-200-contrast: white;
@@ -27,11 +27,10 @@
   --ig-surface-A200-contrast: white;
   --ig-surface-A400-contrast: white;
   --ig-surface-A700-contrast: white;
+  --ig-error-700-contrast: black;
   --ig-success-900-contrast: black;
   --ig-success-A700-contrast: black;
-  --ig-info-600-contrast: black;
-  --ig-info-700-contrast: black;
-  --ig-info-A400-contrast: black;
+  --ig-info-500-contrast: white;
 }
 
 body {

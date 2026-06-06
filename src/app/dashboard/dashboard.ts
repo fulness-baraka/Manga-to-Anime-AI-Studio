@@ -1,6 +1,5 @@
 import { html, css, LitElement, unsafeCSS } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import { Router } from '@vaadin/router';
 import { defineComponents, IgcButtonComponent, IgcIconButtonComponent, IgcIconComponent, IgcNavbarComponent } from 'igniteui-webcomponents';
 import baseStyles from '/src/app/base-view-styles.css?inline';
 
@@ -81,7 +80,7 @@ export default class Dashboard extends LitElement {
     return html`
       <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
       <style>${unsafeCSS(baseStyles)}</style>
-      <igc-navbar @click=${() => Router.go(`/new-project`)} class="dashboard-nav-bar">
+      <igc-navbar class="dashboard-nav-bar">
         <div class="row-layout group">
           <div class="row-layout dashboard-app-title-section">
             <span class="material-icons dashboard-app-icon">
