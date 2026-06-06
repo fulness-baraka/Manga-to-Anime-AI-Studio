@@ -1,6 +1,5 @@
 import { html, css, LitElement, unsafeCSS } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import { Router } from '@vaadin/router';
 import { defineComponents, IgcButtonComponent, IgcIconButtonComponent, IgcIconComponent, IgcNavbarComponent } from 'igniteui-webcomponents';
 import baseStyles from '/src/app/base-view-styles.css?inline';
 
@@ -87,7 +86,7 @@ export default class LandingPage extends LitElement {
       <style>${unsafeCSS(baseStyles)}</style>
       <igc-navbar class="landing-page-nav">
         <div class="row-layout group">
-          <div @click=${() => Router.go(`/landing-page/landing-page-content`)} class="row-layout app-logo-section">
+          <div class="row-layout app-logo-section">
             <span class="material-icons app-icon">
               burst_mode
             </span>
@@ -113,10 +112,10 @@ export default class LandingPage extends LitElement {
             search
           </span>
         </igc-icon-button>
-        <igc-button type="button" slot="end" @click=${() => Router.go(`/landing-page/register-page`)} class="signup-button">
+        <igc-button type="button" slot="end" class="signup-button">
           Sign Up
         </igc-button>
-        <igc-button variant="flat" type="button" slot="end" @click=${() => Router.go(`/landing-page/login-page`)} class="signup-button">
+        <igc-button variant="flat" type="button" slot="end" class="signup-button">
           Login
         </igc-button>
       </igc-navbar>

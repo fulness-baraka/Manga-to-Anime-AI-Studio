@@ -1,5 +1,6 @@
 import { html, css, LitElement, unsafeCSS } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
+import { Router } from '@vaadin/router';
 import { defineComponents, IgcButtonComponent, IgcIconComponent, IgcInputComponent, IgcTextareaComponent } from 'igniteui-webcomponents';
 import { ifDefined } from 'lit/directives/if-defined.js';
 import baseStyles from '/src/app/base-view-styles.css?inline';
@@ -101,7 +102,7 @@ export default class NewProject extends LitElement {
       <igc-textarea label="Paste Manga URL" placeholder="e.g., https://example.com/my-manga.pdf" ?outlined=${true} class="user-input">
         <span slot="helper-text">Enter a URL to automatically fetch manga content</span>
       </igc-textarea>
-      <igc-button type="button" class="start-conversion-button">
+      <igc-button type="button" @click=${() => Router.go(`/export/new-project-ai`)} class="start-conversion-button">
         <span class="material-icons">
           play_arrow
         </span>

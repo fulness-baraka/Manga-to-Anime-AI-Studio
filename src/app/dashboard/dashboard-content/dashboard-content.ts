@@ -466,6 +466,12 @@ export default class DashboardContent extends LitElement {
                 </div>
               </div>
               <div class="column-layout grid-section">
+                <igc-grid-lite .data=${this.northwindEmployees} class="project-history-grid">
+                  <igc-grid-lite-column field="projectName" header="Project Name" ?filterable=${true} ?sortable=${true}></igc-grid-lite-column>
+                  <igc-grid-lite-column field="status" header="Status" ?filterable=${true} ?sortable=${true}></igc-grid-lite-column>
+                  <igc-grid-lite-column field="creationDate" header="Created" ?filterable=${true} ?sortable=${true}></igc-grid-lite-column>
+                  <igc-grid-lite-column field="lastUpdateDate" header="Last Update" ?filterable=${true} ?sortable=${true}></igc-grid-lite-column>
+                </igc-grid-lite>
                 <div class="column-layout dashboard-header-block">
                   <h5 class="content">
                     Project History
@@ -474,12 +480,6 @@ export default class DashboardContent extends LitElement {
                     Recent projects and their statuses.
                   </p>
                 </div>
-                <igc-grid-lite .data=${this.northwindEmployees} class="project-history-grid">
-                  <igc-grid-lite-column field="projectName" header="Project Name" ?filterable=${true} ?sortable=${true}></igc-grid-lite-column>
-                  <igc-grid-lite-column field="status" header="Status" ?filterable=${true} ?sortable=${true}></igc-grid-lite-column>
-                  <igc-grid-lite-column field="creationDate" header="Created" ?filterable=${true} ?sortable=${true}></igc-grid-lite-column>
-                  <igc-grid-lite-column field="lastUpdateDate" header="Last Update" ?filterable=${true} ?sortable=${true}></igc-grid-lite-column>
-                </igc-grid-lite>
               </div>
             </div>
             <div class="column-layout list-column">
